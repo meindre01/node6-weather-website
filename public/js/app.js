@@ -1,6 +1,6 @@
 
 
-fetch('http://localhost:3000/weather?address=gaza').then((response)=>{
+fetch('/weather?address=gaza').then((response)=>{
     response.json().then((data)=>{
        if(data.error){
          console.log(error)
