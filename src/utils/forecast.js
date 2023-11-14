@@ -8,7 +8,7 @@ request({url,json:true},(error,{body} = {})=>{
     }else if(body.error){
         callback('Unable to find your location. Try another search !',undefined)
     }else{
-        callback(undefined,'It is currently ' + body.current.weather_descriptions + ' and the temperature is ' + body.current.temperature + ' degrees out. And feels like ' + body.current.feelslike + ' degrees out')
+        callback(undefined,'It is currently ' + body.current.weather_descriptions + ' and the temperature is ' + body.current.temperature + ' degrees out. And feels like ' + body.current.feelslike + ' degrees out and the humidity is ' + body.current.humidity)
     }
 })
 
